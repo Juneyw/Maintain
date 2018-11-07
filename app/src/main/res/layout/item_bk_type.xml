@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/qb_px_11"
+    android:paddingRight="@dimen/qb_px_13"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/qb_px_15">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/qb_px_5"
+        app:cardElevation="@dimen/qb_px_3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/qb_px_28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_21"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/qb_px_33">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_60"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_select_BK_type"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_BK_type"
+                        style="@style/BKInfoTitleStyle"
+                        android:text="请选择故障类型" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_BK_type"
+                        android:layout_marginLeft="@dimen/qb_px_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_BK_type"
+                        android:background="@null"
+                        android:src="@mipmap/arrow_right_login_color" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/ib_delete_BK_type"
+                    android:background="@null"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/delete_icon"
+                    android:layout_width="@dimen/qb_px_80"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/qb_px_11"
+                android:background="@color/login_top" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView_BK_state"
+                    style="@style/BKInfoTitleStyle"
+                    android:text="故障现象" />
+
+                <LinearLayout
+                    android:id="@+id/ll_select_BK_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/qb_px_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_BK_state"
+                        style="@style/BKInfoStyle" />
+
+                    <ImageView
+                        android:id="@+id/iv_BK_state"
+                        style="@style/BKInfoImgeStyle" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/qb_px_9"
+                android:layout_marginRight="@dimen/qb_px_11"
+                android:background="@color/divideLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView_BK_reason"
+                    style="@style/BKInfoTitleStyle"
+                    android:text="故障原因" />
+
+                <LinearLayout
+                    android:id="@+id/ll_select_BK_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/qb_px_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/tv_BK_reason"
+                        style="@style/BKInfoStyle" />
+
+                    <ImageView
+                        android:id="@+id/iv_BK_reason"
+                        style="@style/BKInfoImgeStyle" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/qb_px_9"
+                android:layout_marginRight="@dimen/qb_px_11"
+                android:background="@color/divideLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView_BK_exclude"
+                    style="@style/BKInfoTitleStyle"
+                    android:text="故障排除" />
+
+                <LinearLayout
+                    android:id="@+id/ll_select_BK_exclude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/qb_px_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/tv_BK_exclude"
+                        style="@style/BKInfoStyle" />
+
+                    <ImageView
+                        android:id="@+id/iv_BK_exclude"
+                        style="@style/BKInfoImgeStyle" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/qb_px_9"
+                android:layout_marginRight="@dimen/qb_px_11"
+                android:background="@color/divideLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView_BK_pic"
+                    style="@style/BKInfoTitleStyle"
+                    android:text="故障照片" />
+
+                <TextView
+                    android:id="@+id/tv_BK_pic"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/qb_px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传照片"
+                    android:textColor="#33B1B6"
+                    android:textSize="@dimen/qb_px_11"/>
+
+                <GridView
+                    android:id="@+id/gv_install_pic"
+                    android:layout_below="@+id/textView_BK_pic"
+                    android:layout_marginTop="@dimen/qb_px_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="2"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

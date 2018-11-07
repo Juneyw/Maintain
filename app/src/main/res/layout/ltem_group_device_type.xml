@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/qb_px_10">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:paddingRight="@dimen/qb_px_21"
+        android:paddingLeft="@dimen/qb_px_18"
+        android:gravity="center_vertical"
+        android:elevation="@dimen/qb_px_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_57">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_select_device"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/qb_px_35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_device_type"
+                android:layout_marginLeft="@dimen/qb_px_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/qb_px_15"
+                android:textColor="@color/login_top"/>
+
+            <ImageView
+                android:id="@+id/iv_device_type"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_device_type"
+                android:layout_marginLeft="@dimen/qb_px_20"
+                android:background="@null"
+                android:src="@mipmap/arrow_right_login_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_add_Bk_type"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/qb_px_13"
+            android:includeFontPadding="false"
+            android:text="新增故障类型"
+            android:paddingLeft="@dimen/qb_px_23"
+            android:paddingRight="@dimen/qb_px_21"
+            android:paddingTop="@dimen/qb_px_7"
+            android:paddingBottom="@dimen/qb_px_6"
+            android:background="@drawable/btu_shape_input"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/login_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

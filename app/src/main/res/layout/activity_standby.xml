@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StandbyActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_standby"
+        android:background="@color/login_top"
+
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageButton
+            android:id="@+id/ib_back_standby"
+            android:background="@null"
+            android:src="@mipmap/arrow_left_white"
+            android:layout_width="@dimen/qb_px_60"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_car_num_standby"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/qb_px_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/but_submit_standby"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/qb_px_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:background="@color/login_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/qb_px_11">
+
+        <RadioGroup
+            android:id="@+id/rg_standby"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_add_breakdown"
+                android:text="新增故障"
+                android:checked="true"
+                android:background="@drawable/tab_opera_adjust_left_selector"
+                style="@style/OpsAdjustTabStyle" />
+
+            <RadioButton
+                android:id="@+id/rb_breakdown_record"
+                android:background="@drawable/tab_opera_adjust_right_selector"
+                android:text="故障记录"
+                style="@style/OpsAdjustTabStyle" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container_standby"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/qb_px_139"
+    android:background="@color/login_top">
+
+
+        <ImageView
+            android:id="@+id/car_img"
+            android:layout_width="@dimen/qb_px_70"
+            android:layout_height="@dimen/qb_px_70"
+            android:src="@mipmap/head_image"
+            android:layout_marginTop="@dimen/qb_px_42"
+            android:layout_marginLeft="@dimen/qb_px_32"
+            />
+        <TextView
+            android:id="@+id/user_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未设置"
+            android:textSize="@dimen/qb_px_20"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/qb_px_42"
+            android:layout_marginLeft="@dimen/qb_px_119"
+            />
+        <TextView
+            android:layout_below="@+id/user_city"
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="company"
+            android:textSize="@dimen/qb_px_12"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/qb_px_13"
+            android:layout_marginLeft="@dimen/qb_px_119"
+
+            />
+
+
+
+</RelativeLayout>

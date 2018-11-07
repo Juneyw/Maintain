@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_vertical"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sd_show_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_400"
+        fresco:placeholderImage="@drawable/tp2"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>

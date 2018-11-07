@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchCarActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/toolbar_search_car"
+            style="@style/SearchBarStyle">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/search_icon"/>
+
+            <EditText
+                android:id="@+id/et_search_car"
+                android:hint="请输入车牌号码"
+                style="@style/SearchEditTextStyle" />
+
+
+            <ImageButton
+                android:id="@+id/ib_cancel_search_car"
+                android:visibility="gone"
+                android:background="@null"
+                android:src="@mipmap/input_cancel_icon"
+                android:layout_width="@dimen/qb_px_40"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel_search_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/qb_px_15"
+            android:layout_centerVertical="true"
+            android:text="@string/cancel"
+            android:textColor="@color/login_top"
+            android:textSize="@dimen/qb_px_14" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/divideLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_above="@+id/rg_approval_state"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/qb_px_20"
+        android:paddingRight="@dimen/qb_px_20">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recv_search"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+</LinearLayout>

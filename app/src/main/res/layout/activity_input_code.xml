@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yantang.juney.maintain.activity.InputCodeActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="?android:actionBarSize"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/toolbar_input_code"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/activate"
+            android:textColor="#3a3a3a"
+            android:textSize="@dimen/qb_px_16" />
+
+
+            <ImageButton
+                android:id="@+id/ib_back_input_code"
+                android:background="@null"
+                android:src="@mipmap/black_left_arrow"
+                android:layout_width="@dimen/qb_px_60"
+                android:layout_height="match_parent" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:background="@color/divideLine"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/qb_px_1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_input_code"
+        tools:layout_editor_absoluteY="83dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/textView7" />
+    <EditText
+        android:id="@+id/et_code"
+        android:background="@drawable/btu_shape_input"
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:hint="请输入编码"
+        android:gravity="center"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btu_input_hand"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:background="@drawable/btu_shape_zcode_pressed"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_code"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_activate"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="@dimen/qb_px_30"
+        android:layout_height="@dimen/qb_px_30"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:indicatorColor="@color/barColor"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

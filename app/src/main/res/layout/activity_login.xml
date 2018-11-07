@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_160"
+        android:background="@color/login_top"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/qb_px_120" />
+
+    <RelativeLayout
+        android:id="@+id/input_user"
+        android:layout_marginTop="@dimen/qb_px_60"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_40"
+        android:layout_below="@+id/login_top"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_70"
+            android:src="@mipmap/account_icon" />
+
+        <EditText
+            android:id="@+id/login_num"
+            android:layout_width="@dimen/qb_px_180"
+            android:layout_height="@dimen/qb_px_40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/qb_px_100"
+            android:background="@null"
+            android:maxEms="10"
+            android:hint="账号"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textSize="@dimen/qb_px_16" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/ib_cancel_input_code"
+            android:layout_toRightOf="@+id/login_num"
+            android:background="@null"
+            android:src="@mipmap/input_cancel_icon"
+            android:layout_width="@dimen/qb_px_60"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_borader"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_password"
+        android:layout_below="@+id/input_user"
+        android:layout_marginTop="@dimen/qb_px_30"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_40"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_70"
+            android:src="@mipmap/password_icon" />
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="@dimen/qb_px_180"
+            android:layout_height="@dimen/qb_px_40"
+            android:textSize="@dimen/qb_px_16"
+            android:hint="密码"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/qb_px_100"
+            android:background="@null" />
+
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/ib_cancel_input_password_code"
+            android:layout_toRightOf="@+id/login_password"
+            android:background="@null"
+            android:src="@mipmap/input_cancel_icon"
+            android:layout_width="@dimen/qb_px_60"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_borader"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <com.yantang.juney.maintain.view.DrawableLeftCenterButton
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/input_password"
+        android:layout_width="@dimen/qb_px_260"
+        android:layout_height="@dimen/qb_px_40"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="@dimen/qb_px_16"
+        android:drawablePadding="@dimen/qb_px_20"
+        android:includeFontPadding="false"
+        android:background="@drawable/login_btn_selector"
+        android:layout_marginTop="@dimen/qb_px_30"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_serve_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换服务器"
+        android:textColor="@color/login_top"
+        android:textSize="@dimen/qb_px_14"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="@dimen/qb_px_22"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

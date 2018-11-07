@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Maintain</string>
+    <string name="activate">activate</string>
+    <string name="version_num">V1.0.1.181106</string>
+    <string name="login">login</string>
+    <string name="account">account</string>
+    <string name="user">user</string>
+    <string name="organization">organization</string>
+    <string name="server">server</string>
+    <string name="version">version</string>
+    <string name="change_password">change password</string>
+    <string name="change_account">change account</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="car">car</string>
+    <string name="cancel">cancel</string>
+
+    <string name="sim_num">SIM</string>
+    <string name="device_name">device name</string>
+    <string name="company">company</string>
+    <string name="car_type">car type</string>
+    <string name="maintain">maintain</string>
+    <string name="record">record</string>
+
+
+    <string name="submit">submit</string>
+    <string name="search">search</string>
+    <string name="finish">finish</string>
+</resources>

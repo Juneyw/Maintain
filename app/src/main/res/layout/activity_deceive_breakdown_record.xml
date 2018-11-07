@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DeceiveBreakdownRecordActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_BK_record"
+        android:background="@color/login_top"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageButton
+            android:id="@+id/ib_back_BK_record"
+            android:background="@null"
+            android:src="@mipmap/arrow_left_white"
+            android:layout_width="@dimen/qb_px_60"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_car_num_BK_record"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/qb_px_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ExpandableListView
+        android:id="@+id/lv_BK_record"
+        android:background="@color/background"
+        android:scrollbars="none"
+        android:divider="@color/transparent"
+        android:groupIndicator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ExpandableListView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sd_BK_pic"
+        android:layout_width="@dimen/qb_px_118"
+        android:layout_height="@dimen/qb_px_71"
+        fresco:placeholderImage="@drawable/tp2"
+        android:scaleType="fitXY"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/qb_px_11"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/qb_px_118"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_pic_type"
+            android:textSize="@dimen/qb_px_12"
+            android:textColor="#999999"
+            android:text="维修前"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_pic_num"
+            android:textSize="@dimen/qb_px_9"
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

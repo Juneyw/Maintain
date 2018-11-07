@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MaintainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_maintain"
+        android:background="@color/login_top"
+
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageButton
+            android:id="@+id/ib_back_maintain"
+            android:background="@null"
+            android:src="@mipmap/arrow_left_white"
+            android:layout_width="@dimen/qb_px_60"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_car_num_maintain"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/qb_px_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/but_submit_maintain"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/qb_px_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ExpandableListView
+            android:id="@+id/lv_maintain"
+            android:scrollbars="none"
+            android:divider="@color/transparent"
+            android:groupIndicator="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btu_add_device_type">
+
+        </ExpandableListView>
+
+        <Button
+            android:id="@+id/btu_add_device_type"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/qb_px_10"
+            android:background="@drawable/login_btn"
+            android:text="新增故障设备"
+            android:textSize="@dimen/qb_px_15"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/qb_px_223"
+            android:layout_height="@dimen/qb_px_36" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_account"
+            android:icon="@mipmap/user_number_imge"
+            app:actionLayout="@layout/custom_menu"
+            android:title="@string/account" />
+
+        <item
+            android:id="@+id/menu_user"
+            android:icon="@mipmap/user_image"
+            app:actionLayout="@layout/custom_menu"
+            android:title="@string/user" />
+        <item
+            android:id="@+id/menu_organization"
+            android:icon="@mipmap/image_company"
+            app:actionLayout="@layout/custom_menu"
+            android:title="@string/organization" />
+
+        <item
+            android:id="@+id/menu_server"
+            android:icon="@mipmap/server_icon"
+            app:actionLayout="@layout/custom_menu"
+            android:title="@string/server" />
+        <item
+            android:id="@+id/menu_version"
+            android:icon="@mipmap/version_icon"
+            app:actionLayout="@layout/custom_menu"
+            android:title="@string/version" />
+
+        <item
+            android:id="@+id/menu_change_password"
+            android:icon="@mipmap/change_password"
+            app:actionLayout="@layout/custom_menu1"
+            android:title="@string/change_password" />
+
+        <item
+            android:id="@+id/menu_change_account"
+            android:icon="@mipmap/changer_user"
+            app:actionLayout="@layout/custom_menu1"
+            android:title="@string/change_account" />
+    </group>
+
+</menu>

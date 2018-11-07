@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.CarInfoFragment">
+
+
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/qb_px_5"
+        app:cardElevation="@dimen/qb_px_3"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/qb_px_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingBottom="@dimen/qb_px_33"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:background="@mipmap/background1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_car"
+                    android:layout_marginLeft="@dimen/qb_px_20"
+                    android:src="@mipmap/car_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_car_num"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/qb_px_15"
+                    android:layout_toRightOf="@+id/image_car"
+                    android:layout_marginLeft="@dimen/qb_px_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:layout_marginLeft="@dimen/qb_px_38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_sim"
+                    android:text="@string/sim_num"
+                    style="@style/CarInfoTitleStyle" />
+
+                <View
+                    android:layout_alignTop="@+id/textView_sim"
+                    android:layout_alignBottom="@+id/textView_sim"
+                    style="@style/CarInfoImgeStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_SIM"
+                    style="@style/CarInfoStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:layout_marginLeft="@dimen/qb_px_38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_device_name"
+                    android:text="@string/device_name"
+                    style="@style/CarInfoTitleStyle" />
+
+                <View
+                    android:layout_alignTop="@+id/textView_device_name"
+                    android:layout_alignBottom="@+id/textView_device_name"
+                    style="@style/CarInfoImgeStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    android:textColor="@color/login_top"
+                    style="@style/CarInfoStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:layout_marginLeft="@dimen/qb_px_38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_company"
+                    android:text="@string/company"
+                    style="@style/CarInfoTitleStyle" />
+
+                <View
+                    android:layout_alignTop="@+id/textView_company"
+                    android:layout_alignBottom="@+id/textView_company"
+                    style="@style/CarInfoImgeStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    style="@style/CarInfoStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/qb_px_20"
+                android:layout_marginLeft="@dimen/qb_px_38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_car_type"
+                    android:text="@string/car_type"
+                    style="@style/CarInfoTitleStyle"/>
+
+                <View
+                    android:layout_alignTop="@+id/textView_car_type"
+                    android:layout_alignBottom="@+id/textView_car_type"
+                    style="@style/CarInfoImgeStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_car_type"
+                    style="@style/CarInfoStyle" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/qb_px_38"
+                android:layout_marginTop="@dimen/qb_px_19"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.yantang.juney.maintain.view.DrawableLeftCenterButton
+                    android:id="@+id/btu_maintain"
+                    android:text="@string/maintain"
+                    style="@style/mainButtonStyle" />
+
+                <com.yantang.juney.maintain.view.DrawableLeftCenterButton
+                    android:id="@+id/btu_record"
+                    android:text="@string/record"
+                    android:layout_marginLeft="@dimen/qb_px_20"
+                    style="@style/mainButtonStyle"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

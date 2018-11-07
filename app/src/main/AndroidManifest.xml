@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yantang.juney.maintain">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.IApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActivateActivity"
+            android:theme="@style/ActivityStyle" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/ActivityStyle" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/ActivityStyle"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.InputCodeActivity"
+            android:theme="@style/ActivityStyle" />
+        <activity
+            android:name=".activity.SearchCarActivity"
+            android:theme="@style/ActivityStyle" />
+
+        <activity android:name=".activity.StandbyActivity"
+            android:theme="@style/ActivityStyle"/>
+
+        <activity android:name=".activity.DeceiveBreakdownRecordActivity"
+            android:theme="@style/ActivityStyle"/>
+
+        <activity android:name=".activity.AddBreakdownActivity"
+            android:theme="@style/ActivityStyle"/>
+
+        <activity android:name=".activity.MaintainActivity"
+            android:theme="@style/ActivityStyle"/>
+
+        <activity android:name=".activity.UploadBKPicActivity"
+            android:theme="@style/ActivityStyle"/>
+
+        <activity android:name=".activity.DeceiveBreakdownSimpleRecordActivity"
+            android:theme="@style/ActivityStyle"/>
+
+        <activity android:name=".activity.PicActivity"
+            android:theme="@style/ActivityStyle"/>
+    </application>
+
+</manifest>

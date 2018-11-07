@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="login_top">#33B1B6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="barColor">#EFEFEF</color>
+    <color name="divideLine">#FFDDDDDD</color>
+    <color name="black">#000000</color>
+    <color name="login_no">#a6c7c8</color>
+    <color name="login_pressed">#516c6d</color>
+
+    <color name="text_color">#575757</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="background">#FFF0F0F0</color>
+
+
+
+</resources>

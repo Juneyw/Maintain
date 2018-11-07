@@ -1,0 +1,2 @@
+com.caption.netmonitorlibrary
+string app_name
